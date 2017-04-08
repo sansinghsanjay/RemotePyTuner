@@ -1,10 +1,10 @@
-RemotePyTuner
+# RemotePyTuner
 
 Its a Python project which can help to Python programmers (or specifically to Data Scientists) to remotely manage the execution of Python programs.
 
 
 
-SERVICES
+## SERVICES
 
 This project provides following services:
 
@@ -15,20 +15,20 @@ This project provides following services:
 3. Above two steps could be repeat up to any number of time till you don't stop the execution by sending an email.
 
 
-MOTIVATIONS
+## MOTIVATIONS
 
 While participating in Data Science competitions like in Kaggle, participants have to tune their Python or R program a lot just to get very little improvement (mostly less than 0.1%) in accuracies (or in results). Generally, tuning a program requires very little changes in it, like changing learning rate, number of layer, number of neurons, optimization function, changing model (in case of Statistical models), etc.
 These programs runs for a long time and then gives an output which might not be as per our expectations. In current scenario, we have to sit for that long time, waiting for output and then we do very small modifications (or tuning) in program and execute it. This time consuming process repeats again and again. So, a better approach is to get final output on your email which we can access on our smartphone and if we don't like the outputs, we can modify (or tune) the program and again execute it on our local machine just by sending an email.
 
 
 
-PLATFORM USED:
+## PLATFORM USED
 
 Developed and tested with Python3 (version 3.5.2) on Ubuntu - 14.04 and Ubuntu - 16.04
 
 
 
-HOW TO USE THIS?
+## HOW TO USE THIS?
 
 1. Follow this tutorial to install Python gmail API in your system: 
 https://developers.google.com/gmail/api/quickstart/python
@@ -59,6 +59,7 @@ $ cd /path/to/RemotePyTuner/
 $ python3 controller.py
 
 9. controller.py will execute and asks for following things:
+```python
 >> MAIN MENU
 >> Enter the path of Python program file : /path/of/your/Python/program
 >> Enter source gmail user-id : source_userid@gmail.com
@@ -72,18 +73,18 @@ $ python3 controller.py
 >>		Enter 'p' for 'python3'
 >>		Enter 'i' for 'ipython3' (X receiving_mail would not work X)
 >> 	Enter your choice : p # Currently there are bugs with 'ipython3' so use 'python3'
+```
 
 10. After above steps, your Python program starts executing. Once it gets completed, you will receive an email on your target_userid@gmail.com from your source_userid@gmail.com with subject subject_of_your_choice. The body of this email would be like:
+```python
 Your
-|
-|
-|
+-"-
+-"-
 Python
-|
-|
-|
-|
+-"-
+-"-
 Program
+
 >>>>>>OUTPUT STATUS<<<<<
 your_msg_in_string_type
 
@@ -93,49 +94,50 @@ Reply with:
 '$r' to re-execute program
 '$sq' to save current program and quit
 While replying keep CONTROLS between '>EOM<'
+```
 
 11. Now there might be following three cases:
 
-11.i. You want to quit your Python program execution. In this case, reply in received email with message:
->EOM<
-$q
->EOM<
+  11. You want to quit your Python program execution. In this case, reply in received email with message:
+  ```python
+  >EOM<
+  $q
+  >EOM<
+  ```
 
-11.ii. You want to modify your program and re-execute it. Reply in received email with message like:
-Your
-|
-|
-|
-Modified
-|
-|
-|
-Python
-|
-|
-|
-Program
->EOM<
-$r
->EOM<
+  11. You want to modify your program and re-execute it. Reply in received email with message like:
+  ```python
+  Your
+  -"-
+  -"-
+  Modified
+  -"-
+  -"-
+  Python
+  -"-
+  -"-
+  Program
+  >EOM<
+  $r
+  >EOM<
+  ```
 
 All modifications will happen on a shadow copy of file provided by user.
 
-11.iii. You are satisfy with the outputs you received on email, so you want to save your modified program in your /path/of/your/Python/program permanently and quit (or terminate) the program. So, reply would be like:
->EOM<
-$sq
->EOM<
+  11. You are satisfy with the outputs you received on email, so you want to save your modified program in your         /path/of/your/Python/program permanently and quit (or terminate) the program. So, reply would be like:
+  ```python
+  >EOM<
+  $sq
+  >EOM<
+  ```
 
 12. NOTE: Currently this project don't have any fault tolerance. So, please be careful while using this. Any wrong operation crashes this program. 
 
 
 
-SCOPE OF IMPROVEMENT
+## SCOPE OF IMPROVEMENT
 
 1. No fault tolerance and no validation of user input.
 2. We cannot execute our program in ipython.
 3. Memory management: Because a program and its modified copy will execute in same session. So, there is a need to free memory of all variables before executing modified program.
 4. This thing can be extend for other languages, specially for R.
-
-
-
