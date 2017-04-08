@@ -41,7 +41,7 @@ sys, imaplib, getpass, time, email, smtplib, os
 3.ii. A new tab will open. Now click on "Sign-in & Security". 
 3.iii. In new page, scroll down to the bottom of page, turn "ON" the "Allow less secure apps" option.  
 
-PERFORM STEP 1, 2 and 3 ONLY ON FIRST USE.
+  PERFORM STEP 1, 2 and 3 ONLY ON FIRST USE.
 
 4. Include "import sys" in your Python program.
 
