@@ -98,14 +98,14 @@ While replying keep CONTROLS between '>EOM<'
 
 11. Now there might be following three cases:
 
-  11. You want to quit your Python program execution. In this case, reply in received email with message:
+  i. You want to quit your Python program execution. In this case, reply in received email with message:
   ```python
   >EOM<
   $q
   >EOM<
   ```
 
-  11. You want to modify your program and re-execute it. Reply in received email with message like:
+  ii. You want to modify your program and re-execute it. Reply in received email with message like:
   ```python
   Your
   -"-
@@ -122,9 +122,9 @@ While replying keep CONTROLS between '>EOM<'
   >EOM<
   ```
 
-All modifications will happen on a shadow copy of file provided by user.
+  All modifications will happen on a shadow copy of file provided by user.
 
-  11. You are satisfy with the outputs you received on email, so you want to save your modified program in your         /path/of/your/Python/program permanently and quit (or terminate) the program. So, reply would be like:
+  iii. You are satisfy with the outputs you received on email, so you want to save your modified program in your         /path/of/your/Python/program permanently and quit (or terminate) the program. So, reply would be like:
   ```python
   >EOM<
   $sq
