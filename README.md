@@ -36,9 +36,9 @@ https://developers.google.com/gmail/api/quickstart/python
 2. Install that following Python packages on your system:
 sys, imaplib, getpass, time, email, smtplib, os
 
-3. This project requires two gmail user id: source_userid@gmail.com and target_userid@gmail.com. source_userid@gmail.com will be used to send the final output of your program to target_userid@gmail.com. Then, you can reply from target_userid@gmail.com to take desired actions on your Python program. For this you have to allow less secure apps to access your source_userid@gmail.com. You can do this by following these steps:
-	i. Click on your profile pic at right top of your gmail account. A pop-up opens, click on "My Account" in that pop-up.
-	ii. A new tab will open. Now click on "Sign-in & Security". 
+3. This project requires two gmail user id: source_userid@gmail.com and target_userid@gmail.com. source_userid@gmail.com will be used to send the final output of your program to target_userid@gmail.com. Then, you can reply from target_userid@gmail.com to take desired actions on your Python program. For this you have to allow less secure apps to access your source_userid@gmail.com. You can do this by following these steps:  
+	i. Click on your profile pic at right top of your gmail account. A pop-up opens, click on "My Account" in that pop-up.  
+	ii. A new tab will open. Now click on "Sign-in & Security".  
 	iii. In new page, scroll down to the bottom of page, turn "ON" the "Allow less secure apps" option.  
 
   PERFORM STEP 1, 2 and 3 ONLY ON FIRST USE.
