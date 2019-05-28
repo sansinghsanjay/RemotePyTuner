@@ -10,12 +10,12 @@ This project provides following services:
 
 1. You can get the final output of your Python program on your email id.
 
-2. If you didn't get desired output from your program then you can modify your program and send that modified program in reply of received email (in step 1) to execute the modified program.
+2. If you don't get desired output from your program then you can modify your program and send that modified program in reply of received email (in step 1) to execute the modified program.
 
 3. Above two steps could be repeat up to any number of time till you don't stop the execution by sending an email.
 
 
-## MOTIVATIONS
+## MOTIVATION
 
 While participating in Data Science competitions like in Kaggle, participants have to tune their Python or R program a lot just to get very little improvement (mostly less than 0.1%) in accuracies (or in results). Generally, tuning a program requires very little changes in it, like changing learning rate, number of layer, number of neurons, optimization function, changing model (in case of Statistical models), etc.
 These programs runs for a long time and then gives an output which might not be as per our expectations. In current scenario, we have to sit for that long time, waiting for output and then we do very small modifications (or tuning) in program and execute it. This time consuming process repeats again and again. So, a better approach is to get final output on your email which we can access on our smartphone and if we don't like the outputs, we can modify (or tune) the program and again execute it on our local machine just by sending an email.
@@ -26,7 +26,7 @@ These programs runs for a long time and then gives an output which might not be 
 
 Developed and tested with Python3 (version 3.5.2) on Ubuntu - 14.04 and Ubuntu - 16.04
 
-
+Also tested on Ubuntu-18.04
 
 ## HOW TO USE THIS?
 
@@ -37,9 +37,9 @@ https://developers.google.com/gmail/api/quickstart/python
 sys, imaplib, getpass, time, email, smtplib, os
 
 3. This project requires two gmail user id: source_userid@gmail.com and target_userid@gmail.com. source_userid@gmail.com will be used to send the final output of your program to target_userid@gmail.com. Then, you can reply from target_userid@gmail.com to take desired actions on your Python program. For this you have to allow less secure apps to access your source_userid@gmail.com. You can do this by following these steps:
-3.i. Click on your profile pic at right top of your gmail account. A pop-up opens, click on "My Account" in that pop-up.
-3.ii. A new tab will open. Now click on "Sign-in & Security". 
-3.iii. In new page, scroll down to the bottom of page, turn "ON" the "Allow less secure apps" option.  
+	i. Click on your profile pic at right top of your gmail account. A pop-up opens, click on "My Account" in that pop-up.
+	ii. A new tab will open. Now click on "Sign-in & Security". 
+	iii. In new page, scroll down to the bottom of page, turn "ON" the "Allow less secure apps" option.  
 
   PERFORM STEP 1, 2 and 3 ONLY ON FIRST USE.
 
